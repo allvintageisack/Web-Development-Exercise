@@ -115,8 +115,12 @@
             <img src="assets/img/project3.1.png" class="card-img-top" alt="Project 3">
             <div class="card-body">
               <h5 class="card-title">Cynk.io</h5>
-              <p class="card-text">Cynk.io represents a robust and feature-rich web application designed to revolutionize communication and collaboration for modern teams and distributed workforces. The development focused on creating a secure, efficient, and user-centric platform that integrates essential tools for seamless interaction. At its core, Cynk.io provides secure real-time messaging, enabling instant and encrypted one-on-one and group communications to ensure privacy and confidentiality for all discussions. The application facilitates organized team collaboration through dedicated workspaces and channels, allowing users to categorize discussions and resources by project or topic, enhancing clarity and information retrieval. A sophisticated file sharing and management system was implemented, complete with capabilities for various file types, secure previews, and critical version control, preventing data loss and maintaining document integrity. While primarily a communication tool, Cynk.io also incorporates fundamental project management functionalities, such as task assignment and progress tracking, to help teams streamline their workflows. The user interface was meticulously designed to be intuitive and highly responsive, ensuring a low learning curve and consistent, fluid experience across desktops, tablets, and mobile devices. Built with a scalable architecture, Cynk.io is engineered to support a growing user base and increasing data demands, proving its reliability and long-term viability as a comprehensive collaboration solution.</p>
-              <a href="https://www.cynk.io/" class="btn btn-outline-success" target="_blank">View Project</a>
+              <p class="card-text">Cynk.io is a robust web application designed to facilitate seamless communication and collaboration. This platform provides secure messaging, file sharing, and project management tools, enabling teams to connect and work efficiently regardless of their location. Key features include real-time chat, organized workspaces, and document versioning, all within an intuitive and responsive user interface. Cynk.io aims to streamline workflow and improve productivity for modern businesses and distributed teams.</p>
+            
+               <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#project3Modal">
+               View Project
+               </button>
+
             </div>
           </div>
         </div>
@@ -124,10 +128,33 @@
       </div>
     </div>
   </section>
+  
+<!-- Modal for Project 3 -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3ModalLabel">Cynk.io</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <img src="assets/img/project3.1.png" class="img-fluid mb-3" alt="Blog App Project">
+        <p>Cynk.io represents a robust and feature-rich web application designed to revolutionize communication and collaboration for modern teams and distributed workforces. The development focused on creating a secure, efficient, and user-centric platform that integrates essential tools for seamless interaction. At its core, Cynk.io provides secure real-time messaging, enabling instant and encrypted one-on-one and group communications to ensure privacy and confidentiality for all discussions. The application facilitates organized team collaboration through dedicated workspaces and channels, allowing users to categorize discussions and resources by project or topic, enhancing clarity and information retrieval. A sophisticated file sharing and management system was implemented, complete with capabilities for various file types, secure previews, and critical version control, preventing data loss and maintaining document integrity. While primarily a communication tool, Cynk.io also incorporates fundamental project management functionalities, such as task assignment and progress tracking, to help teams streamline their workflows. The user interface was meticulously designed to be intuitive and highly responsive, ensuring a low learning curve and consistent, fluid experience across desktops, tablets, and mobile devices. Built with a scalable architecture, Cynk.io is engineered to support a growing user base and increasing data demands, proving its reliability and long-term viability as a comprehensive collaboration solution.</p>
+
+        <a href="https://www.cynk.io/" target="_blank" class="btn btn-outline-success mt-3">
+          Open Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 Isack Mwangasu. All rights reserved.</p>
+    <p class="mb-0">© <span id="currentYear"></span> Isack Mwangasu. All rights reserved.</p>
 
      <a href="https://x.com/isak_co_ke" target="_blank" class="text-white mx-2">
     <i class="bi bi-twitter"></i> Twitter
@@ -144,5 +171,6 @@
 
   <!-- Bootstrap JS -->
   <script src="assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
